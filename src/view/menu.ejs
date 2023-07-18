@@ -1,0 +1,19 @@
+<% if(typeof menu !== 'undefined' && menu.length > 0){ %>
+  <% menu.forEach(function(item){ %>
+    <% if(item.qty > 0){ %>
+      <%- include('item', {item}); %>
+    <% } %>
+  <% }); %>      
+<% } %>
+<div class="d-flex flex-column flex-md-row justify-content-between align-items-center my-3">
+  <div class="w-75 p-2 mb-3 flex-fill d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <input type="email" placeholder="Email" class="form-control me-2" id="foodmenu-input-email" required>
+    <input type="text" placeholder="Telefón" class="form-control me-2" id="foodmenu-input-phone" required>
+    <input type="text" placeholder="Adresa" class="form-control" id="foodmenu-input-address" required>
+  </div>
+  <div class="w-25 d-grid flex-fill p-2 mb-3">
+    <button type="button" class="btn btn-info" id="foodmenu-button-send">
+      Objednať
+    </button>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+{
+  "name": "food-order-gas",
+  "description": "Food order via Google Apps Script with Spreadsheet.",
+  "keywords": [
+    "express",
+    "ejs",
+    "bootstrap",
+    "docker"
+  ],
+  "author": "Henrich Barkoczy <me@barkoczy.social>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Barkoczy/food-order-gas.git"
+  },
+  "license": "MIT",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-compress": "^1.0.0",
+    "express-minify-html-3": "^1.2.0",
+    "path": "^0.12.7"
+  }
+}
